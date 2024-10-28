@@ -8,3 +8,12 @@ body {
   text-align: center;
   font-family: "Times New Roman";
 }
+
+header {
+  display: flex;
+  height: 70px;
+  background-color: rgb(57, 198, 75);
+  align-items: center;
+  padding: 10px;
+
+}
