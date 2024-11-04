@@ -8,11 +8,14 @@ body {
   background-color: #39B54A;
   padding: 10px 0;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 header img {
   max-width: 150px;
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -32,4 +35,11 @@ footer {
   text-align: center;
   padding: 10px 0;
   font-size: 0.9em;
+}
+
+.bioma-img {
+  width: 700px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción original */
+  margin: 10px; /* Añade espacio alrededor de la imagen */
+  display: block; /* Para que cada imagen esté en su propia línea */
 }
