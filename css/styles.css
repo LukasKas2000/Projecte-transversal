@@ -13,6 +13,33 @@ body {
 
 header img {
   max-width: 300px;
+  height: auto;
+  transition: transform 0.3s ease; /* Suaviza la transición */
+}
+
+/* Animación al pasar el cursor */
+.logo:hover {
+  animation: bounce-rotate 0.8s ease-out;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Definición de la animación */
+@keyframes bounce-rotate {
+  0% {
+      transform: scale(1) rotate(0deg); /* Estado inicial */
+  }
+  30% {
+      transform: scale(1.1) rotate(10deg); /* Crece y gira un poco */
+  }
+  50% {
+      transform: scale(0.9) rotate(-10deg); /* Rebota hacia atrás */
+  }
+  70% {
+      transform: scale(1.05) rotate(5deg); /* Rebota hacia adelante */
+  }
+  100% {
+      transform: scale(1) rotate(0deg); /* Vuelve al estado inicial */
+  }
 }
 
 nav ul {
@@ -152,3 +179,5 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
+
+  
