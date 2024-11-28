@@ -1,2 +1,2 @@
-Web de Minecraft, explicando cosas como: Su origen, su fama, sus creadores, sus galardones... entre muchas otras.
-Adriano Arana, Lucas Castrillo.
+Web de Minecraft, explicando cosas como: Sus diferentes versiones, sus mobs, sus variados biomas... entre muchas otras.
+Adriano Arana y Lucas Castrillo.
