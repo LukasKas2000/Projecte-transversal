@@ -8,17 +8,33 @@ body {
   background-color: #39B54A;
   padding: 10px 0;
   text-align: center;
-  position: sticky;
-  top: 0;
+
 }
 
 header img {
-  max-width: 150px;
+  max-width: 300px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -38,8 +54,101 @@ footer {
 }
 
 .bioma-img {
-  width: 700px; /* Ajusta el tamaño de la imagen */
-  height: auto; /* Mantiene la proporción original */
-  margin: 10px; /* Añade espacio alrededor de la imagen */
-  display: block; /* Para que cada imagen esté en su propia línea */
+  width: 700px; 
+  height: auto; 
+  margin: 10px; 
+  display: block;
 }
+
+ section {
+    margin-bottom: 50px;
+  }
+  video {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .versiones-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .versiones-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .versiones-list img.thumbnail {
+    max-width: 220px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 4px;
+  }
+  
+  .versiones-list h3 {
+    margin-top: 0;
+  }
+
+  .mobs-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .mob-item, .mob-item2 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .mob-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .mob-item2 img {
+    max-width: 100%;
+  }
+
+  .biomas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .bioma-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bioma-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .equipo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .miembro {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
