@@ -1,34 +1,118 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', sans-serif; /* Fuente pixelada estilo retro */
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #1d5428; /* Verde oscuro, como la hierba de Minecraft */
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-.container {
-    background: white;
+    min-height: 100vh;
     padding: 20px;
+}
+
+.container {
+    background: #2c2f33; /* Gris oscuro tipo piedra */
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra fuerte */
+    max-width: 800px;
+    width: 100%;
+    border: 3px solid #7f5f30; /* Borde marrón tipo madera */
 }
-h1, h2 {
+
+h1 {
+    font-size: 2.8em;
     text-align: center;
+    color: #55ff55; /* Verde brillante del logo de Minecraft */
+    margin-bottom: 10px;
+    text-shadow: 3px 3px #333; /* Sombra negra pixelada */
 }
+
+h2 {
+    font-size: 1.6em;
+    text-align: left;
+    color: #f7bd62; /* Dorado estilo antorcha */
+    margin-top: 30px;
+    border-bottom: 3px solid #7f5f30; /* Línea marrón tipo madera */
+    padding-bottom: 5px;
+    text-shadow: 2px 2px #000;
+}
+
+p, ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    font-size: 1em;
+    background: #3b3b3b; /* Gris oscuro tipo adoquín */
 }
+
 table, th, td {
-    border: 1px solid #ddd;
-    text-align: center;
+    border: 2px solid #7f5f30; /* Bordes marrones */
 }
-th, td {
+
+th {
+    background-color: #55ff55; /* Verde brillante tipo césped */
+    color: #2c2f33; /* Texto oscuro para contraste */
+    font-weight: bold;
     padding: 10px;
+    text-shadow: 1px 1px #000;
 }
+
+td {
+    padding: 10px;
+    background-color: #454545; /* Fondo gris oscuro */
+    color: #fff;
+}
+
 caption {
     font-weight: bold;
+    font-size: 1.3em;
+    color: #f7bd62; /* Dorado */
     margin-bottom: 10px;
+    text-align: left;
+}
+
+a {
+    color: #55ff55; /* Verde brillante */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f7bd62; /* Cambia a dorado al pasar el ratón */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Efecto de ampliación al pasar el ratón */
+    transition: transform 0.2s ease-in-out;
+}
+
+button {
+    background-color: #55ff55;
+    color: #2c2f33;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Press Start 2P', sans-serif;
+    cursor: pointer;
+    text-shadow: 1px 1px #000;
+}
+
+button:hover {
+    background-color: #f7bd62; /* Dorado brillante */
+    color: #2c2f33; /* Texto oscuro */
+    transform: scale(1.1); /* Ampliación al pasar el ratón */
+    transition: all 0.2s ease-in-out;
 }
