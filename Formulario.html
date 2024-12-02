@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="iniciarsesion">
+    <header>
+        <div class="logo">
+            <img src="img/index/logo.png" alt="logo de la empresa" class="logo-img">
+            <h2 class="logo-nombre"></h2>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="index.html">Inicio</a></li>
+                <li><a href="Versiones.html">Versiones</a></li>
+                <li><a href="Mobs.html">Mobs</a></li>
+                <li><a href="Biomas.html">Biomas</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container" id="feedback">
+            <div class="login-container">
+                <h2>Formulario</h2>
+                <form action="#success">
+                    
+                    <label for="nickname">Nombre en Minecraft:</label>
+                    <input type="text" id="nickname" name="nickname" placeholder="Ingresa tu nombre de jugador" required>
+    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+    
+                    <label for="age">Edad:</label>
+                    <input type="number" id="age" name="age" placeholder="Ingresa tu edad" min="0" required>
+    
+                    <label for="favorite-version">Qué versión conocías:</label>
+                    <select id="favorite-version" name="favorite-version" required>
+                        <option value="">Selecciona una versión</option>
+                        <option value="MinecraftJava">Minecraft Java</option>
+                        <option value="MinecraftBedrock">Minecraft Bedrock</option>
+                        <option value="MinecraftEducation">Minecraft Education</option>
+                        <option value="Ninguna">N.A</option>
+                    </select>
+    
+                    <fieldset>
+                        <legend>Mobs Favoritos:</legend>
+                        <label><input type="checkbox" name="mobs" value="zombie" checked> Zombie</label>
+                        <label><input type="checkbox" name="mobs" value="creeper"> Creeper</label>
+                        <label><input type="checkbox" name="mobs" value="enderman"> Enderman</label>
+                        <label><input type="checkbox" name="mobs" value="esqueleto" checked> Esqueleto</label>
+                        <label><input type="checkbox" name="mobs" value="otros" checked> Otros</label>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Bioma Favorito:</legend>
+                        <label><input type="radio" name="biome" value="bosque" checked> Bosque</label>
+                        <label><input type="radio" name="biome" value="desierto"> Desierto</label>
+                        <label><input type="radio" name="biome" value="oceano"> Océano</label>
+                    </fieldset>
+    
+                    <label for="comments">Comentarios o sugerencias:</label>
+                    <textarea id="comments" name="comments" placeholder="Escribe aquí tus comentarios" required></textarea>
+    
+                    
+                    <button type="submit">Enviar Formulario</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="success-container" id="success">
+            <h2>Formulario Enviado Correctamente</h2>
+            <p>Gracias por tu respuesta, lo valoramos mucho y ayudará a mejorar nuestro portal.</p>
+            <a href="#feedback">
+                <button>Volver al Formulario</button>
+            </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Contacta con nosotros: <a href="mailto:info@portal-minecraft.com">info@portal-minecraft.com</a></p>
+        <p>2024 Portal de Minecraft</p>
+    </footer>
+
+</body>
+</html>
