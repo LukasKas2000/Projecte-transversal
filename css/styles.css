@@ -14,35 +14,43 @@ body {
   header img {
     max-width: 400px;
     height: auto;
-    transition: transform 0.3s ease; /* Suaviza la transición */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Suaviza las transiciones */
   }
   
   /* Animación al pasar el cursor */
   .logo:hover {
-    animation: bounce-rotate 0.8s ease-out;
+    animation: advanced-bounce 1.2s ease-out;
     cursor: pointer; /* Cambia el cursor al pasar por encima */
   }
   
   /* Definición de la animación */
-  @keyframes bounce-rotate {
+  @keyframes advanced-bounce {
     0% {
-        transform: scale(1) rotate(0deg); /* Estado inicial */
+      transform: scale(1) rotate(0deg); /* Estado inicial */
+      filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0));
     }
-    30% {
-        transform: scale(1.1) rotate(10deg); /* Crece y gira un poco */
+    20% {
+      transform: scale(1.2) rotate(15deg); /* Crece y gira un poco */
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
     }
-    50% {
-        transform: scale(0.9) rotate(-10deg); /* Rebota hacia atrás */
+    40% {
+      transform: scale(0.8) rotate(-15deg); /* Rebota hacia atrás */
+      filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
     }
-    70% {
-        transform: scale(1.05) rotate(5deg); /* Rebota hacia adelante */
+    60% {
+      transform: scale(1.15) rotate(5deg); /* Rebota hacia adelante */
+      filter: drop-shadow(0 7px 20px rgba(0, 0, 0, 0.25));
+    }
+    80% {
+      transform: scale(0.95) rotate(-2deg); /* Rebota ligeramente */
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
     }
     100% {
-        transform: scale(1) rotate(0deg); /* Vuelve al estado inicial */
+      transform: scale(1) rotate(0deg); /* Vuelve al estado inicial */
+      filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0));
     }
   }
   
-
   
   main {
   padding: 40px;
